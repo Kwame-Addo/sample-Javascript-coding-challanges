@@ -1,6 +1,6 @@
 //The first parameter should be the weight and the second should be the height.
 function bmiCalculator(weight,height){
-var bmi = (weight)/(height*height);
+var bmi = (weight)/Math.pow(height,2);
 return (bmi);
 console.log(bmi)
 }
