@@ -2,7 +2,6 @@
 function bmiCalculator(weight,height){
 var bmi = (weight)/Math.pow(height,2);
 return (bmi);
-console.log(bmi)
 }
 
 
@@ -14,6 +13,7 @@ console.log(bmi)
 
 var bmi = bmiCalculator(65, 1.8); 
 bmi=Math.round(bmi);
+console.log(bmi);
 
 
 // bmi should equal 20 when it's rounded to the nearest whole number.
