@@ -1,20 +1,26 @@
-//The first parameter should be the weight and the second should be the height.
-function bmiCalculator(weight,height){
-var bmi = (weight)/Math.pow(height,2);
-return Math.round(bmi);
+function bmiCalculator (weight, height) {
+
+    var interpretation = (weight / Math.pow (height,2));
+
+    if (interpretation <= 18.5) {
+
+        return  "Your BMI is "+interpretation+", so you are underweight." ;
+
+    }
+
+    else if (interpretation > 18.5 && interpretation <= 24.9){
+
+        return  "Your BMI is "+interpretation+", so you have a normal weight." ;
+
+    }
+
+    else if (interpretation > 24.9){
+
+        return  "Your BMI is "+interpretation+", so you are overweight." ;
+
+    }
+
+    return interpretation;
+
 }
-
-
-
-
-
-
-// /* function call
-
-var bmi = bmiCalculator(65, 1.8); 
-console.log(bmi);
-
-
-// bmi should equal 20 when it's rounded to the nearest whole number.
-
-// */
+alert(interpretation);
