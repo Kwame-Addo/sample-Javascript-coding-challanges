@@ -1,6 +1,6 @@
 function bmiCalculator (weight, height) {
 
-    var interpretation = (weight / Math.pow (height,2));
+    var interpretation = (weight / (height*height);
 
     if (interpretation <= 18.5) {
 
